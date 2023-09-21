@@ -1,18 +1,22 @@
 import React from 'react'
 
-const ProjectItem = ({img,title}) => {
+const ProjectItem = ({title, link, description}) => {
     return (
-        <div className = "relative flex items-center justify-center h-auto w-full shadow-x shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-gray-200 to-[#001b5e]">
-            <img src={img} alt="/" className="rounded-xl group-hover:opacity-10"/>
-            <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-                <h3 className = "text-2xl font-bold text-white tracking-wider text-center">
+        <div className = "h-auto w-full shadow-x shadow-gray-400 rounded-xl px-10 ">
+                <div className = "w-full pb-3">
+                <h3 className = "text-lg font-semibold text-[#001b5e]">
                     {title}
                 </h3>
-                <p className="pb-4 pt-2 text-white text-center">React JS</p>
-                <a href="/">
-                    <p className="text-center p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg">More Info</p>
+                </div>
+                <div className = "w-full">
+                    <ul>
+                        {description.map((point,idx)=>(
+                        <li key={idx} className="pt-0 text-base font-normal text-stone-500">{point}</li>))}
+                </ul>
+                <a href={link}>
+                    <p className="text-left pt-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-sm">More Info</p>
                 </a>
-            </div>
+                </div>
         </div>
     )
 }
