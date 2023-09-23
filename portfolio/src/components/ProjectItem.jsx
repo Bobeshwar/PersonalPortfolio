@@ -9,7 +9,7 @@ const ProjectItem = ({title, link, description}) => {
                 </h3>
                 </div>
                 <div className = "w-full">
-                    <ul>
+                    <ul className = "list-disc">
                         {description.map((point,idx)=>(
                         <li key={idx} className="pt-0 text-base font-normal text-stone-500">{point}</li>))}
                 </ul>
