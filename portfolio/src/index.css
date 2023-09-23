@@ -5,3 +5,7 @@
 * {
     scroll-behavior: smooth;
 }
+
+.homepage > div{
+    scroll-snap-align: top;
+}

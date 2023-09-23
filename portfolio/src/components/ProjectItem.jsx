@@ -13,9 +13,12 @@ const ProjectItem = ({title, link, description}) => {
                         {description.map((point,idx)=>(
                         <li key={idx} className="pt-0 text-base font-normal text-stone-500">{point}</li>))}
                 </ul>
-                <a href={link}>
-                    <p className="text-left pt-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-sm">More Info</p>
-                </a>
+                {   
+                    link ?
+                    <a href={link}>
+                        <p className="text-left pt-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-sm">More Info</p>
+                    </a> :  <p className="text-left pt-3 rounded-lg bg-white text-green-700 font-bold cursor-pointer text-sm">Available on request</p>
+                }
                 </div>
         </div>
     )

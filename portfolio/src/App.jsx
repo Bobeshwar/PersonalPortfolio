@@ -9,9 +9,9 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div>
+    <div className = "snap-y">
       <Sidenav/>
-      <Main/>
+      <Main />
       <Work/>
       <Projects/>
       <Contact/>
