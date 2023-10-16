@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http://Bobeshwar.github.io/PersonalPortfolio",
+  "homepage": "http://Bobeshwar.github.io/PersonalPortfolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

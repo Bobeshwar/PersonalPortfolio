@@ -7,14 +7,14 @@ const data = [
         title: "Automatic Text Summarization",
         description: ["Programmed and evaluated 4 different models for Automatic Text Summarization using Python, Keras, Tensorflow, Scikit-learn, Pandas, Jupyter and Huggingface", 
         "Developed and evaluated performance of BERT, MMR and Centroid Ranking and with transfer learning with PEGASUS to generate prompts for Stable Diffusion model, achieving precision of 0.812"],
-        link: "/Automatic Summarization.pdf",
+        link: "./Automatic Summarization.pdf",
     },
 
     {
         title: "Parallel Apriori Algorithm",
         description: ["Developed Parallel version of Apriori Frequent Itemset Mining Algorithm in Apache Spark using Scala and Java with pruning step and distributed Hash Tree implementation on Sequence count of over 77000 with 3340 unique items",
     "Ran algorithm on AWS EMR, S3 and evaluated speedup and runtime with different hyperparameters and clusters"],
-        link: "/Parallel Apriori Algorithm.pdf"
+        link: "./Parallel Apriori Algorithm.pdf"
     },
 
     {
@@ -23,7 +23,7 @@ const data = [
             "Modified BERT Architecture to predict latent user feature vectors generated from Alternating Least Squares Algorithm from Yelp Reviews Data using Python, Pandas, HuggingFace, TensorFlow, Keras and Azure Machine Learning",
             "Evaluated Performance of 5 variations of the BERT architecture (RoBERTa, DeBERTa, DistilBERT, AlBERT)"
         ],
-        link: "/Recommendation System Project.pdf"
+        link: "./Recommendation System Project.pdf"
     },
 
     {
